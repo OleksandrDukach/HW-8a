@@ -140,7 +140,7 @@ address {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  padding-top: 16px;
+  padding-top: 26px;
   padding-bottom: 16px;
   margin-right: 87px;
 }
@@ -153,10 +153,11 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
+  height: 80px;
 }
 
 .header__page-nav {
@@ -217,11 +218,56 @@ address {
   padding-bottom: 32px;
 }
 
-.header__contacts-list {
+@media screen and (min-width: 768px) {
+  .head-contacts-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.head-contacts-menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+@media screen and (max-width: 767.98px) {
+  .head-contacts-menu__item {
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .head-contacts-menu__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .head-contacts-menu__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
 }
 
 .header__contact-info {
@@ -237,6 +283,7 @@ address {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   list-style: none;
+  margin-right: 30px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;

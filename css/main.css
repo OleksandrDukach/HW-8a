@@ -61,7 +61,7 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -142,6 +142,7 @@ address {
   letter-spacing: 0.03em;
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-right: 87px;
 }
 
 .logo--blue {
@@ -167,6 +168,21 @@ address {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: auto;
+}
+
+.head-contacts-menu {
+  margin-left: 84px;
+}
+@media screen and (min-width: 768px) {
+  .head-contacts-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header__page-nav .header__item {
@@ -299,6 +315,7 @@ address {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+  overflow-y: scroll;
 }
 @media screen and (min-width: 480px) {
   .modal {
@@ -718,6 +735,7 @@ address {
 }
 
 .benefits__thumb {
+  height: 120px;
   background-color: var(--secondary-bgr-color);
   margin-bottom: 30px;
   border: none;
@@ -1290,7 +1308,6 @@ address {
 
 .header-menu-btn {
   position: relative;
-  left: 100px;
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1320,23 +1337,30 @@ address {
   }
 }
 
-.header__menu {
-  display: none;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding: 20px;
-}
-.header__menu.is-open {
-  display: block;
-}
 @media screen and (max-width: 767px) {
   .header__menu {
     display: none;
-    text-align: center;
-    background-color: #fff;
-    fill: currentColor;
-    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 48px;
+    padding-right: 40px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+  }
+  .header__menu.is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1344,10 +1368,9 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: center;
-    background-color: #fff;
-    fill: currentColor;
-    border: none;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 

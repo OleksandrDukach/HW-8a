@@ -173,7 +173,7 @@ address {
 }
 
 .head-contacts-menu {
-  margin-left: 84px;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .head-contacts-menu {
@@ -237,6 +237,9 @@ address {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
@@ -272,14 +275,6 @@ address {
 
 .header__contact-info {
   color: var(--primery-text-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   list-style: none;

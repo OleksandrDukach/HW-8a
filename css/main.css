@@ -151,7 +151,7 @@ address {
   width: 100%;
   height: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header__navigation {
     height: 80px;
   }
@@ -215,17 +215,12 @@ address {
   color: var(--accent-color);
   display: block;
   padding-top: 32px;
-  padding-bottom: 22px;
+  padding-bottom: 32px;
 }
 @media screen and (max-width: 767px) {
   .header__link--current {
     font-size: 40px;
     padding-bottom: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__link--current {
-    padding-bottom: 32px;
   }
 }
 
@@ -299,6 +294,7 @@ address {
           transition-duration: 250ms;
   -webkit-transition-timing-function: var(--cubic-animation);
           transition-timing-function: var(--cubic-animation);
+  padding-top: 10px;
 }
 .header__contact-info:hover, .header__contact-info:focus {
   color: var(--accent-color);

@@ -1414,6 +1414,7 @@ address {
     display: -ms-flexbox;
     display: flex;
     margin-left: auto;
+    z-index: 100;
   }
 }
 
@@ -1489,6 +1490,7 @@ address {
     background-color: #fff;
     fill: currentColor;
     border: none;
+    z-index: 100;
   }
 }
 

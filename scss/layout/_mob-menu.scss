@@ -33,6 +33,7 @@
   @media screen and (max-width: 767px) {
     display: flex;
     margin-left: auto;
+    z-index: 100;
   }
 }
 
@@ -86,6 +87,7 @@
     background-color: #fff;
     fill: currentColor;
     border: none;
+    z-index: 100;
   }
 }
 

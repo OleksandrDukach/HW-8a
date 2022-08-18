@@ -27,6 +27,12 @@
   }
 }
 
+.page-hero__container {
+  @media screen and (min-width: 1200px) {
+    padding-top: 72px;
+  }
+}
+
 .header {
   border-bottom: solid 1px var(--head-border-line);
   position: relative;
@@ -189,6 +195,12 @@
     font-size: 34px;
 
     &.e-mail {
+      font-size: 24px;
+    }
+  }
+
+  &.i-phone {
+    @media screen and (max-width: 320px) {
       font-size: 24px;
     }
   }

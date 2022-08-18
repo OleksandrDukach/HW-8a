@@ -111,6 +111,12 @@ address {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .page-hero__container {
+    padding-top: 72px;
+  }
+}
+
 .header {
   border-bottom: solid 1px var(--head-border-line);
   position: relative;
@@ -307,6 +313,11 @@ address {
     font-size: 24px;
   }
 }
+@media screen and (max-width: 320px) {
+  .header__contact-info.i-phone {
+    font-size: 24px;
+  }
+}
 
 .header__contacts-list .header__contact-item {
   margin-right: 50px;
@@ -385,7 +396,8 @@ address {
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
-    top: 40%;
+    top: 55%;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -640,10 +652,6 @@ address {
   }
 }
 
-.button-list > .btn:not(:last-child) {
-  margin-right: 8px;
-}
-
 .filter-button {
   background-color: var(--secondary-bgr-color);
   font-family: inherit;
@@ -837,6 +845,11 @@ address {
   margin-bottom: 10px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .section-subtitle {
+    text-align: left;
+  }
+}
 
 .desc {
   line-height: 1.7;
@@ -992,7 +1005,7 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -1008,6 +1021,16 @@ address {
 .customers__logo:hover, .customers__logo:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .customers__logo {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__logo {
+    width: 170px;
+  }
 }
 
 .customers__logo--icon-comp {
@@ -1594,6 +1617,8 @@ address {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     row-gap: 10px;
+    font-size: 18px;
+    margin-left: 20px;
   }
 }
 
@@ -1605,7 +1630,7 @@ address {
 }
 
 .header-nav-social__item {
-  border-right: 1px solid var(--accent-color);
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding: 0 5px;
 }
 

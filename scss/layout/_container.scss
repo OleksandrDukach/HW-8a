@@ -94,6 +94,10 @@
   font-size: 14px;
   margin-bottom: 10px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .desc {
   line-height: 1.7;
@@ -215,7 +219,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -229,6 +233,14 @@
   &:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 
@@ -265,6 +277,7 @@
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
     height: 600px;
+
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/herox1.jpg);
 
@@ -293,3 +306,7 @@
 .header__icon:focus {
   fill: var(--accent-color);
 }
+
+// .customers__list {
+//   width: 210px;
+// }

@@ -1445,6 +1445,14 @@ address {
 }
 
 @media screen and (max-width: 767px) {
+  .header-menu-btn.is-open {
+    position: fixed;
+    left: 85%;
+    top: 2%;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .header__menu {
     display: none;
     position: fixed;

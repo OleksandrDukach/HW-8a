@@ -80,11 +80,9 @@
 
 .header__menu.is-open {
   display: flex;
-  // position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  // height: 100vw;
 
   @media screen and (max-width: 767px) {
     position: fixed;
